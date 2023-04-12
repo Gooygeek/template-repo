@@ -15,3 +15,7 @@ SHELL := bash
 
 MAKEFLAGS += --warn-undefined-variables
 MAKEFLAGS += --no-builtin-rules
+
+.PHONY: pre-commit
+pre-commit:
+	pre-commit install
